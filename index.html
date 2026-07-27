@@ -402,6 +402,7 @@ hr {
   <h1>游戏发行投放实战手册</h1>
 
   <div class="badge">📅 最后更新：2026年7月</div>
+  <div class="badge">✍️ 作者：陈梦阳</div>
 </div>
 
 <div class="page-wrapper">
@@ -428,9 +429,11 @@ hr {
   <a href="#m4-5" class="sub">4.5 小红书</a>
   <a href="#m4-6" class="sub">4.6 快手</a>
   <a href="#m4-7" class="sub">4.7 华为/OPPO/vivo</a>
-  <a href="#module5">五：常见问题</a>
-  <a href="#m5-0" class="sub">竞价广告算法机制</a>
-  <a href="#module6">AI投放的探索和思考</a>
+  <a href="#module5">五：投放执行操作手册</a>
+  <a href="#m5-1" class="sub">5.1 账户搭建与数据评估方案</a>
+  <a href="#m5-2" class="sub">5.2 投放中执行SOP与监测体系</a>
+  <a href="#m5-3" class="sub">5.3 投放后复盘流程</a>
+  <a href="#module6">六：AI投放的探索和思考</a>
   <a href="#m6-1" class="sub">LTV预估模型</a>
   <a href="#m6-2" class="sub">投放决策沙盘</a>
 </nav>
@@ -804,12 +807,168 @@ hr {
 
 <hr>
 
-<!-- ==================== MODULE 5 ==================== -->
-<h2 class="module-title" id="module5">五：常见问题与解决思路</h2>
+<!-- ==================== MODULE 6 ==================== -->
 
-<h3 id="m5-0">核心决策逻辑：竞价广告算法机制</h3>
+<!-- ==================== MODULE 5: 投放执行操作手册 ==================== -->
+<h2 class="module-title" id="module5">五：投放执行操作手册（优化师视角）</h2>
 
-<p>所有投放优化的底层，是理解平台算法如何分配流量。</p>
+<p>前四章讲的是投放负责人视角的策略框架——投什么、投哪里、投多少。这一章切换到<strong>优化师视角</strong>：拿到策略后，具体怎么落地执行？账户怎么搭？数据怎么看？SOP怎么跑？复盘怎么做？这些是投放负责人制定策略后，优化师每天在操作台上面对的真实战场。</p>
+
+<blockquote>
+<p>优化是一个<strong>"假设→测试→验证→迭代"</strong>的循环过程。没有一劳永逸的策略，只有持续的数据反馈和策略调整。所有的决策都应尽可能以数据为依据，而非感觉。</p>
+</blockquote>
+
+<hr>
+
+<h3 id="m5-1">5.1 账户搭建与数据评估方案</h3>
+
+<p>拿到投放策略后，优化师的第一步不是直接开投，而是把策略翻译成<strong>可执行的账户搭建方案</strong>和<strong>可度量的数据评估体系</strong>。这一步决定了后续所有操作是否有章可循、效果是否可衡量。</p>
+
+<h4>一、投放前准备清单</h4>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>准备项</th><th>具体动作</th><th>关键要求</th></tr></thead>
+<tbody>
+<tr><td><strong>目标确认</strong></td><td>明确本次投放的核心目标及量化指标</td><td>CPA目标值、日耗预算、ROI底线需提前与负责人对齐</td></tr>
+<tr><td><strong>受众分析</strong></td><td>基于用户画像（年龄、性别、兴趣、行为）建立受众包</td><td>核心受众 + 扩展受众 + Look-alike受众包三类准备</td></tr>
+<tr><td><strong>素材策划</strong></td><td>建立套路库：总结历史爆款素材元素</td><td>前后对比、真人测评、剧情切入、热点借势等分类归档</td></tr>
+<tr><td><strong>A/B测试矩阵</strong></td><td>提前规划测试变量</td><td>标题A/B、视频前3秒A/B、落地页按钮颜色A/B等</td></tr>
+<tr><td><strong>落地页检查</strong></td><td>确保链接正确、加载速度快、转化路径清晰</td><td>内容与素材强相关，移动端3秒内完成加载</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>二、数据监控体系：从浅到深的双层架构</h4>
+
+<p>数据监控不能只看表面数字，需要建立从"浅度指标"到"深度指标"的双层监控架构。浅度指标用于<strong>快速判断广告竞争力与内容吸引力</strong>，深度指标用于<strong>衡量商业目标与最终ROI</strong>。</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>层级</th><th>指标类型</th><th>具体指标</th><th>核心用途</th></tr></thead>
+<tbody>
+<tr><td rowspan="2"><strong>浅度指标</strong><br>（内容竞争力）</td><td>曝光效率</td><td>CPM、CPC</td><td>判断广告在竞价中的竞争力</td></tr>
+<tr><td>内容吸引力</td><td>CTR、互动率（点赞/评论/转发）、播放率（3s/5s/完播率）</td><td>判断素材对用户的吸引力和内容质量</td></tr>
+<tr><td rowspan="3"><strong>深度指标</strong><br>（商业价值）</td><td>成本效率</td><td>激活成本、注册成本、付费成本、留存成本</td><td>衡量获客效率，对比LTV判断盈利性</td></tr>
+<tr><td>回报效率</td><td>ROI（注册/新增口径）、ARPU、AFPPU、付费率（注册/回流）、人均付费次数</td><td>衡量用户质量和变现能力</td></tr>
+<tr><td>长期价值</td><td>注册留存/回流留存、游戏时长、LTV曲线</td><td>评估用户长期留存和付费潜力</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="highlight-box">
+<p><strong>补充：实际监测中需额外关注的维度</strong></p>
+<ul>
+<li><strong>时间维度指标</strong>：小时/3小时/6小时/12小时/首日/次日/3日/7日/14日/30日——不同时间窗口的数据差异反映用户留存衰减速度和付费节奏</li>
+<li><strong>内容与人群定向指标</strong>：按素材campaign、版位、年龄、性别、机型价格等拆分——用于定位哪个素材×哪个人群的组合效率最高</li>
+<li><strong>竞价健康度指标</strong>：ECPM排名分位、学习期通过率、计划跑量率——判断账户是否处于健康的竞争状态</li>
+<li><strong>异常波动指标</strong>：CPA突增/突降、消耗骤变、CTR断崖下跌——需设置实时告警</li>
+</ul>
+</div>
+
+<h4>三、数据分析方法与决策逻辑</h4>
+
+<p><strong>核心原则：由面到点，逐层下钻。</strong></p>
+
+<p>分析路径：<strong>整包维度 → 账户维度 → 项目/计划维度 → 广告维度</strong>。先看全局是否正常，再逐层定位问题出在哪一层。</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>分析层级</th><th>关注重点</th><th>典型问题</th></tr></thead>
+<tbody>
+<tr><td><strong>整包维度</strong></td><td>整体消耗进度、综合CPA、ROI是否达标</td><td>整体跑量不足？成本超标？</td></tr>
+<tr><td><strong>账户维度</strong></td><td>各账户的消耗分布、成本对比</td><td>某个账户异常拖后腿？</td></tr>
+<tr><td><strong>计划维度</strong></td><td>各计划的跑量状态、学习期进展</td><td>哪些计划在跑量？哪些在学习期卡住？</td></tr>
+<tr><td><strong>广告维度</strong></td><td>单条广告的CTR/CPC/转化率</td><td>素材是否衰退？定向是否精准？</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p>以上数据排列组合成丰富的数据情况，每种数据趋势下需采取针对性的应对策略。底层逻辑来自对<strong>内容</strong>和<strong>人群</strong>的分析，需要结合<strong>数据趋势</strong>和<strong>人性洞察</strong>做出最优决策。</p>
+</blockquote>
+
+<h4>四、账户搭建原则</h4>
+
+<p><strong>核心原则：一个计划对应一类核心素材和一套定向。</strong>避免多类素材或定向混在一个计划里，导致数据无法分析归因。</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>搭建维度</th><th>操作规范</th><th>常见错误</th></tr></thead>
+<tbody>
+<tr><td><strong>内容搭建</strong></td><td>一个计划 → 一类核心素材 + 一套定向</td><td>多类素材混投，数据无法拆解分析</td></tr>
+<tr><td><strong>预算设置</strong></td><td>新计划初期设较低日预算用于测试</td><td>新计划直接给大预算，试错成本过高</td></tr>
+<tr><td><strong>出价策略</strong></td><td>学习期小幅提高出价帮助起量，稳定期降至合理出价</td><td>全程固定出价，不随阶段调整</td></tr>
+<tr><td><strong>计划命名</strong></td><td>标准化命名：产品_渠道_素材类型_定向_日期</td><td>随意命名，后期难以批量管理分析</td></tr>
+</tbody>
+</table>
+</div>
+
+<hr>
+
+<h3 id="m5-2">5.2 投放中执行SOP与监测体系</h3>
+
+<p>投放中的执行不是"建完计划就放着不管"，而是需要建立<strong>节奏化的监控体系</strong>和<strong>标准化的应对流程</strong>。以下是优化师每日必须执行的操作SOP。</p>
+
+<h4>一、分时段监控SOP</h4>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>时间段</th><th>关注指标</th><th>判断目标</th><th>操作要点</th></tr></thead>
+<tbody>
+<tr><td><strong>首小时</strong></td><td>曝光量、CPM</td><td>判断计划是否成功起量</td><td>曝光为0或极低→检查审核状态和出价竞争力</td></tr>
+<tr><td><strong>前6小时</strong></td><td>CTR、CPC</td><td>判断素材吸引力</td><td>CTR低于行业均值50%→考虑换素材或调整封面</td></tr>
+<tr><td><strong>每日3次</strong><br>（早/中/晚）</td><td>CPA、ROI、消耗进度</td><td>全面评估核心成本指标</td><td>设置成本异常告警，偏离目标20%触发排查</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>二、日常基础监测清单</h4>
+
+<p>除了核心数据指标，优化师每日还需执行以下基础监测动作：</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>监测项</th><th>具体内容</th><th>频率</th></tr></thead>
+<tbody>
+<tr><td><strong>曝光物料检查</strong></td><td>确认在投素材正常展示、无审核异常、创意完整</td><td>每日1次</td></tr>
+<tr><td><strong>关键字搜索结果</strong></td><td>搜索品牌词/产品词，检查竞品是否截流、搜索结果页是否健康</td><td>每日1次</td></tr>
+<tr><td><strong>素材生命周期监控</strong></td><td>跟踪主力素材CTR衰减曲线，CTR衰减至峰值50%时准备替换</td><td>每日1次</td></tr>
+<tr><td><strong>竞品动态观察</strong></td><td>观察竞品素材更新频率、新素材方向、投放量级变化</td><td>每日1次</td></tr>
+<tr><td><strong>落地页可用性</strong></td><td>定期点击测试落地页加载速度、跳转逻辑、转化按钮是否正常</td><td>每日1次</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>三、计划生命周期管理</h4>
+
+<p>每个广告计划都有生命周期，优化师需要根据不同阶段采取不同策略：</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>生命周期阶段</th><th>时间特征</th><th>操作策略</th><th>注意事项</th></tr></thead>
+<tbody>
+<tr><td><strong>🟡 学习期</strong></td><td>&lt;24小时</td><td>不轻易干预，给系统探索时间</td><td>除非数据极其离谱（如CPM奇高），否则不要修改</td></tr>
+<tr><td><strong>🟢 成长期</strong></td><td>1-3天</td><td>数据好的计划逐步加预算（每次+20%~50%）</td><td>加预算不要一次翻倍，避免触发模型重新学习</td></tr>
+<tr><td><strong>🔴 衰退期</strong></td><td>&gt;3天，成本逐步升高</td><td>复制计划微调定向/更新素材延长生命周期</td><td>若调整后仍无效，及时关停避免持续亏损</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="highlight-box">
+<p><strong>⚡ 操作提醒：成长期加预算的节奏控制</strong></p>
+<ul>
+<li>每次加预算幅度不超过50%，间隔至少4-6小时观察效果</li>
+<li>如果加预算后成本明显上升，说明流量池可能到顶，不要再加</li>
+<li>表现好的计划优先"复制"而不是"大幅改预算"——复制一个新的相似计划，让系统重新探索增量人群</li>
+</ul>
+</div>
+
+<div style="margin: 15px 0; padding: 15px; background: #fff8e1; border-left: 4px solid #ffc107; border-radius: 4px;">
+<p><strong>💡 核心理念</strong>：投放优化的核心不是频繁调整，也不是放任不管，而是<strong>培养优质计划</strong>。"培养"是一种关键心态——给好计划耐心成长的空间，给差计划果断止损的决断，用数据驱动微调而非凭直觉大改，让跑出来的好计划持续释放价值。</p>
+</div>
+
+<p>而要培养好计划，首先要理解算法如何分配流量——知道系统"选谁"，才能知道该"培养谁"。</p>
 
 <h4>信息流广告推荐流程：召回 → 粗排 → 精排</h4>
 
@@ -849,15 +1008,90 @@ hr {
 <li>理解算法的"内容理解"方式，才能主动引导流量方向</li>
 </ul>
 
-<h3>具体执行细节问题</h3>
-<p><em>（待补充）</em></p>
+<hr>
+<h4>四、异常应对策略速查</h4>
+
+<p style="color: #666; font-size: 0.9em; margin: 0.5em 0 1em 0; padding: 0.8em; background: #f8f9fa; border-left: 3px solid #ffc107;">
+<strong>📌 使用说明：</strong>以下为常见异常的快速定位方向，实际业务中异常原因往往复杂，需要结合具体数据做关联分析和系列调整动作。本表仅作为问题诊断的起点，而非完整解决方案。
+</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>异常现象</th><th>可能原因</th><th>应对动作</th></tr></thead>
+<tbody>
+<tr><td>计划无曝光</td><td>出价过低/素材审核未通过/定向过窄</td><td>检查审核状态→提价10%-20%→放宽定向</td></tr>
+<tr><td>曝光大但CTR极低</td><td>素材与目标人群不匹配/创意吸引力差</td><td>更换素材或调整封面/标题</td></tr>
+<tr><td>CTR正常但转化差</td><td>落地页问题/产品与素材承诺不符</td><td>检查落地页→核实素材与产品一致性</td></tr>
+<tr><td>CPA突然飙升</td><td>竞争加剧/素材衰退/大盘波动</td><td>对比大盘数据→检查竞品动态→更换素材</td></tr>
+<tr><td>消耗过快/超预算</td><td>出价过高/预算设置不合理</td><td>降价或降低预算→设置小时消耗上限</td></tr>
+<tr><td>ROI持续低于预期</td><td>用户质量差/付费链路问题/产品承接不足</td><td>分析付费数据→检查付费转化链路→反馈产品团队</td></tr>
+</tbody>
+</table>
+</div>
 
 <hr>
 
-<hr>
+<h3 id="m5-3">5.3 投放后复盘流程</h3>
+
+<p>复盘是将执行经验沉淀为团队资产的关键环节。没有复盘的投放是"凭运气赚钱"，有复盘的投放才是"可复制的方法论"。</p>
+
+<h4>一、每日小结（日结）</h4>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>记录项</th><th>内容要求</th><th>示例</th></tr></thead>
+<tbody>
+<tr><td><strong>核心数据快照</strong></td><td>当日消耗、CPA、ROI、新增用户数</td><td>消耗5.2万，CPA 38元，首日ROI 8.5%</td></tr>
+<tr><td><strong>核心动作记录</strong></td><td>当天做了哪些操作（新建/关停/调价/换素材）</td><td>新建3条计划测试新素材方向，关停2条衰退计划</td></tr>
+<tr><td><strong>测试结论</strong></td><td>A/B测试的结果和发现</td><td>A标题比B标题CTR高15%，但转化率持平</td></tr>
+<tr><td><strong>异常与应对</strong></td><td>遇到的异常情况以及处理方式</td><td>下午CPA突增，发现竞品上新素材抢量</td></tr>
+<tr><td><strong>次日计划</strong></td><td>第二天的操作重点和注意事项</td><td>重点观察新素材表现，准备补充2组新素材</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>二、每周/每项目深度复盘</h4>
+
+<p>周复盘不只是数据的简单汇总，而是<strong>归因分析→经验沉淀→下一步计划</strong>的完整闭环。</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>复盘模块</th><th>具体内容</th><th>产出物</th></tr></thead>
+<tbody>
+<tr><td><strong>📊 数据汇总</strong></td><td>整理所有计划的数据，计算整体ROI、CPA趋势、消耗分布</td><td>周度数据报告</td></tr>
+<tr><td><strong>🔍 归因分析</strong></td><td>哪些素材/定向/版位效果最好？为什么？<br>哪些表现差？根因是什么？</td><td>归因分析表</td></tr>
+<tr><td><strong>💡 经验沉淀</strong></td><td>将爆款素材元素、高效定向包、优秀落地页设计录入"优化策略库"</td><td>更新优化策略库</td></tr>
+<tr><td><strong>📋 下一步计划</strong></td><td>基于复盘结论，制定下一阶段的测试方向和素材制作计划</td><td>下周投放计划</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>三、归因分析框架</h4>
+
+<p>归因分析是深度复盘的核心，需要回答"效果好的原因是什么"和"效果差的问题出在哪"。</p>
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>分析维度</th><th>分析内容</th><th>关键问题</th></tr></thead>
+<tbody>
+<tr><td><strong>素材维度</strong></td><td>各素材的CTR、转化率、生命周期对比</td><td>哪些素材类型效果最好？共性特征是什么？</td></tr>
+<tr><td><strong>定向维度</strong></td><td>各定向包的CPA、ROI、用户质量对比</td><td>哪个人群包效率最高？有没有被忽略的优质人群？</td></tr>
+<tr><td><strong>版位维度</strong></td><td>各版位的流量质量、成本效率对比</td><td>哪个版位ROI最高？哪个版位在浪费预算？</td></tr>
+<tr><td><strong>时段维度</strong></td><td>不同时段的投放效率对比</td><td>哪些时段ROI最高？是否存在无效消耗时段？</td></tr>
+<tr><td><strong>渠道维度</strong></td><td>各渠道的综合效率对比</td><td>预算分配是否合理？是否需要调整渠道比例？</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="highlight-box">
+<p><strong>🔄 复盘闭环的核心逻辑：</strong></p>
+<p>数据汇总（发生了什么）→ 归因分析（为什么发生）→ 经验沉淀（学到了什么）→ 优化策略库更新（下次怎么做）→ 下一步计划（具体做什么）</p>
+<p>每一轮复盘都应该让下一轮投放<strong>更有方向感</strong>，而不是从头开始摸索。</p>
+</div>
+
 
 <!-- ==================== MODULE 6: AI投放的探索和思考 ==================== -->
-<h2 class="module-title" id="module6">AI投放的探索和思考</h2>
+<h2 class="module-title" id="module6">六：AI投放的探索和思考</h2>
 
 <p>投放不是纯靠经验拍脑袋的活，也不是纯靠算法就能搞定的事。这两年我一直在思考：怎么把投放从"手艺活"变成"可量化、可验证、可迭代"的系统工程。以下是两个落地项目的实践和思考。</p>
 
